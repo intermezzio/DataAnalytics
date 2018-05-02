@@ -48,5 +48,36 @@ def first_question():
                 language = language[:language.find('(')]
             
             languages_data[language] = speakers
+            
+        if i in Southeast_Asian_languages:
+            language, speakers = line_parser(data,i) #fix here
+            Southeast_Asian_languages_data[language] = speakers
     
+    print Southeast_Asian_languages
     return languages_data
+
+def line_parser(data,i):
+    
+    lst = data[i].split(',')
+    language = lst[0]
+    speakers = 0
+    
+    n = 0 #counter
+            
+    while True:
+        if '.00' in lst[n]:
+            speakers = lst[n]
+            n=0
+            break
+        else:
+            n += 1
+                    
+    language = language.upper()
+    language = language.strip()
+    language = language.strip('\"')
+    language = language.strip('.')
+    if '(' in language:
+        language = language[:language.find('(')]
+    
+    print language, speakers
+    return language, speakers
