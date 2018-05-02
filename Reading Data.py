@@ -32,7 +32,7 @@ def first_question():
             lst = data[i].split(',')
             language = lst[0]
             
-            while True == True:
+            while True:
                 if '.00' in lst[n]:
                     speakers = lst[n]
                     break
