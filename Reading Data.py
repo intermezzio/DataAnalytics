@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import csv
 
 def first_question():
     '''
@@ -23,12 +24,21 @@ def first_question():
     Indian_languages_data={}
     Native_American_languages_data={}
     
+    n = 0 #counter
+    
     #retrieve data
     for i in range(8,183): # Omit header lines
         if i in languages:
             lst = data[i].split(',')
             language = lst[0]
-            speakers = lst[1]
+            
+            while True == True:
+                if '.00' in lst[n]:
+                    speakers = lst[n]
+                    break
+                else:
+                    n += 1
+                    
             language = language.upper()
             language = language.strip()
             language = language.strip('\"')
