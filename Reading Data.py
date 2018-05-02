@@ -35,6 +35,7 @@ def first_question():
             while True:
                 if '.00' in lst[n]:
                     speakers = lst[n]
+                    n=0
                     break
                 else:
                     n += 1
