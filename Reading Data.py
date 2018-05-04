@@ -24,10 +24,9 @@ def first_question():
     Indian_languages_data={}
     Native_American_languages_data={}
     
-    n = 0 #counter
-    
     #retrieve data
     for i in range(8,183): # Omit header lines
+        #retrieve all languages data
         if i in languages:
             language, speakers = line_parser1(data,i)
             languages_data[language] = speakers
@@ -35,11 +34,38 @@ def first_question():
         if i in Southeast_Asian_languages:
             language, speakers = line_parser1(data,i)
             Southeast_Asian_languages_data[language] = speakers
-            total_speakers = 0
-            for language in Southeast_Asian_languages_data:
-                total_speakers += float(Southeast_Asian_languages_data[language])
+        
+        if i in Indian_languages:
+            language, speakers = line_parser1(data,i)
+            Indian_languages_data[language] = speakers
+        
+        if i in Native_American_languages:
+            language, speakers = line_parser1(data,i)
+            Native_American_languages_data[language] = speakers
+    
+    #consolidate Southeast Asian Languages
+    total_speakers = 0
+    
+    for language in Southeast_Asian_languages_data:
+        total_speakers += float(Southeast_Asian_languages_data[language])
             
-            languages_data['SOUTHEAST ASIAN LANGUAGES'] = total_speakers
+    languages_data['SOUTHEAST ASIAN LANGUAGES'] = total_speakers
+    
+    #consolidate Indian Languages
+    total_speakers = 0
+    
+    for language in Indian_languages_data:
+        total_speakers += float(Indian_languages_data[language])
+            
+    languages_data['INDIAN LANGUAGES'] = total_speakers
+    
+    #consolidate Native American Languages
+    total_speakers = 0
+    
+    for language in Native_American_languages_data:
+        total_speakers += float(Native_American_languages_data[language])
+            
+    languages_data['NATIVE AMERICAN LANGUAGES'] = total_speakers
     
     return languages_data
 
