@@ -7,7 +7,7 @@ Creates bar graphs for first and second questions using matplotlib
 '''
 
 #format long labels by splitting words onto new lines
-def format_long_labels(dict):
+def format_labels(dict):
     for key in dict:
         if ' ' in key:
             new_key = '\n'.join(key.split(' '))
@@ -16,6 +16,7 @@ def format_long_labels(dict):
 
 def first_graph():
     q1 = first_question()
+    format_labels(q1)
     fig, ax = plt.subplots()
     graph = plt.bar(np.arange(len(q1.keys())), q1.values(), align='center', alpha=0.5)
     plt.xticks(np.arange(len(q1.keys())), q1.keys())
@@ -27,7 +28,8 @@ def first_graph():
 
 def second_graph():
     q2 = second_question()
-    #convert from "less than very well" to "very well"
+    format_labels(q2)
+    #convert from "less than very well" to "very well" by subtracting from 100%
     english = []
     for value in q2.values():
         english.append(100-value)
