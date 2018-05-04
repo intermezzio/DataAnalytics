@@ -215,8 +215,8 @@ def third_question():
     '''
         Function to retrieve data for Third Question
         Returns the percentage of people in each state who speak another language who speak english well
-        Returns in form of dictionary with the key as uppercase language (String) and the value as the percentage of people who speak english well (float)
-        Ex. {"FRENCH",50.0}
+        Returns in form of dictionary with the key as state (String) and the value as the percentage of people who speak english well (float)
+        Ex. {"New Jersey",50.0}
     '''
     #list of states
     states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District_of_Columbia',
@@ -254,20 +254,17 @@ def third_question():
 def fourth_question():
     '''
         Function to retrieve data for Fourth Question
-        Returns the number of people in the United States who speak each language
-        Returns in form of dictionary with the key as uppercase language (String) and the value as the number of speakers (float)
-        Ex. {"FRENCH",3000.0}
+        Returns the percentage of people in each state who speak a second language
+        Returns in form of dictionary with the key as state (String) and the value as the percentage of speakers (float)
+        Ex. {"New Jersey",75.0}
     '''
     #list of states
-    '''
     states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District_of_Columbia',
                 'Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland',
                 'Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New_Hampshire',
                 'New_Jersey','New_Mexico','New_York','North_Carolina','North_Dakota','Ohio','Oklahoma','Oregon','Pennsylvania',
                 'Puerto_Rico','Rhode_Island','South_Carolina','South_Dakota','Tennessee','Texas','Utah','Vermont','Virginia',
                 'Washington','West_Virginia','Wisconsin','Wyoming']
-    '''
-    states = ['Alabama','Alaska', 'Arizona', 'Arkansas', 'California', 'Connecticut']
     
     bilingual_people = {}
     speak_english_well = {}
