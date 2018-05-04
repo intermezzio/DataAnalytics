@@ -1,27 +1,35 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from ReadingData import *
 
-languages = ('Spanish', 'French', 'Italian', 'German', 'Chinese', 'Japanese', 'Korean', 'SE Asian', 'Indian', 'Native American')
-index = np.arange(len(languages))
-speakers = []
-english = [] #less than very well or very well?
+q1 = first_question()
+q2 = second_question()
+for dict in (q1, q2): #format long labels by splitting words onto new lines
+    for key in dict:
+        if ' ' in key:
+            new_key = '\n'.join(key.split(' '))
+            dict[new_key] = dict[key]
+            del dict[key]
+index = np.arange(len(q1.keys()))
+english = [] #convert from "less than very well" to "very well"
+for value in q2.values():
+    english.append(100-value)
 
-fig1, ax = plt.subplots()
-
-graph1 = plt.bar(index, speakers, align='center', alpha=0.5)
-plt.xticks(index, languages)
+#first question bar graph
+fig1, ax1 = plt.subplots()
+graph1 = plt.bar(index, q1.values(), align='center', alpha=0.5)
+plt.xticks(np.arange(len(q1.keys())), q1.keys())
 plt.xlabel('Language Group')
 plt.ylabel('Number of People Who Speak at Home')
+ax1.set_yscale('log') #set to log scale
 plt.title('Languages Spoken at Home in the US, 2009-2013')
-
 plt.show()
 
-fig1, ax = plt.subplots()
-
+fig1, ax2 = plt.subplots()
 graph2 = plt.bar(index, english, align='center', alpha=0.5)
-plt.xticks(index, languages)
+plt.xticks(np.arange(len(q2.keys())), q2.keys())
 plt.xlabel('Language Group')
 plt.ylabel('Percentage of People Who Speak English "Very Well"')
+plt.ylim(ymax=100) #set max of y axis to 100%
 plt.title('English Ability by Language, 2009-2013')
-
 plt.show()
