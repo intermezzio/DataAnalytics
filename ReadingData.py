@@ -227,33 +227,43 @@ def third_question():
                 'Puerto_Rico','Rhode_Island','South_Carolina','South_Dakota','Tennessee','Texas','Utah','Vermont','Virginia',
                 'Washington','West_Virginia','Wisconsin','Wyoming']
     '''
-    states = ['Alabama','Alaska', 'California']
+    states = ['Alabama','Alaska', 'Arizona', 'Arkansas', 'California']
     
     bilingual_people = {}
     speak_english_well = {}
+    percentages = {}
     
     for state in states:
         #openDataFile
-        datafile = open(state + '.csv','r')
-        data = datafile.readlines()
-        
-        state_name = state.replace('_',' ')
-        bilingual_people[state_name] = bilingual_people_by_state(data)
-    
+        with open(state + '.csv','r') as datafile:
+            
+            data = datafile.readlines()
+            
+            state_name = state.replace('_',' ')
+            
+            bilingual, total = bilingual_people_by_state(data, False)
+            bilingual_people[state_name] = bilingual
+            speak_english_well[state_name] = total
+            
+    print speak_english_well
     return bilingual_people
         
 
-def bilingual_people_by_state(data):
+def bilingual_people_by_state(data, total):
     '''
-    Function to return the number of bilingual people by state
-    Returns a float
+    Function to return the number of bilingual people by state, and a second value that depends on total
+    Returns two floats
     Float = number of bilingual people in the state
+    
+    If total = True, the second float = total population of state
+    If total = False, the second float = total people who speak English well
     '''
     #split data
     lst = data[7].split(',')
     
-    #keep track of number of bilingual people
+    #keep track of number of bilingual people and second variable
     speakers = 0
+    speakers2 = 0
     
     n = 0 #counter
         
@@ -262,8 +272,27 @@ def bilingual_people_by_state(data):
         if '.00' in lst[n]:
             speakers = float(lst[n])
             n=0
+            
+            if not total:
+                #number of people who speak english well
+                speakers2 = float(lst[n+2])
+            
             break
+            
         else:
             n += 1
+        
+    if total:
+        #total number of people
+        lst = data[5].split(',')
+        while True:
+            if '.00' in lst[n]:
+                speakers2 = float(lst[n])
+                n=0
+            
+                break
+            
+            else:
+                n += 1
     
-    return speakers
+    return speakers, speakers2

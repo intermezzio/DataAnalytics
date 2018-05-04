@@ -1,31 +1,3 @@
-'''import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.basemap import Basemap as Basemap
-from matplotlib.colors import rgb2hex, Normalize
-from matplotlib.patches import Polygon # https://stackoverflow.com/questions/39742305/how-to-use-basemap-python-to-plot-us-with-50-states
-# https://gis.stackexchange.com/questions/198530/plotting-us-cities-on-a-map-with-matplotlib-and-basemap
-from matplotlib.collections import PatchCollection
-from matplotlib.colorbar import ColorbarBase
-import os.path
-
-m = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49, projection='lcc',lat_1=33,lat_2=45,lon_0=-95)
-
-shp_info = m.readshapefile('st99_d00','states',drawbounds=True)
-
-data = { # dictionary of data
-    "New Jersey": 65,
-    "New York": 52,
-    "state": "value"
-}
-
-#colors = dict()
-
-#colorMap = plt.cm.YlOrRd
-
-
-
-
-'''
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap as Basemap
@@ -33,8 +5,11 @@ from matplotlib.colors import rgb2hex
 from matplotlib.patches import Polygon
 m = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
 projection='lcc',lat_1=33,lat_2=45,lon_0=-95)
-shp_info = m.readshapefile('st99_d00','states',drawbounds=True)
-popdensity = {
+shp_info = m.readshapefile('StateMaps/st99_d00','states',drawbounds=True)
+
+stateList = ['Mississippi', 'Oklahoma', 'Delaware', 'Minnesota', 'Illinois', 'Arkansas', 'New Mexico', 'Indiana', 'Louisiana', 'Texas', 'Wisconsin', 'Kansas', 'Connecticut', 'California', 'West Virginia', 'Georgia', 'North Dakota', 'Pennsylvania', 'Alaska', 'Missouri', 'South Dakota', 'Colorado', 'New Jersey', 'Washington', 'New York', 'Nevada', 'Maryland', 'Idaho', 'Wyoming', 'Arizona', 'Iowa', 'Michigan', 'Utah', 'Virginia', 'Oregon', 'Montana', 'New Hampshire', 'Massachusetts', 'South Carolina', 'Vermont', 'Florida', 'Hawaii', 'Kentucky', 'Rhode Island', 'Nebraska', 'Ohio', 'Alabama', 'North Carolina', 'Tennessee', 'Maine']
+
+dataset = {
 'New Jersey': 438.00,
 'Rhode Island': 387.35,
 'Massachusetts': 312.68,
@@ -84,23 +59,30 @@ popdensity = {
 'North Dakota': 3.59,
 'Montana': 2.39,
 'Wyoming': 1.96,
-'Alaska': 0.42}
+'Alaska': 0.42} # replace with real data
+
 colors={}
 statenames=[]
-cmap = plt.cm.hot
-vmin = 0; vmax = 450
-'''
+cmap = plt.cm.YlOrRd
+vmin = 0; vmax = 100 # set range.
 for shapedict in m.states_info:
-statename = shapedict['NAME']
-if statename not in ['District of Columbia','Puerto Rico']:
-pop = popdensity[statename]
-colors[statename] = cmap(1.-np.sqrt((pop-vmin)/(vmax-vmin)))[:3]
-statenames.append(statename)
-ax = plt.gca()
+    statename = shapedict['NAME']
+    if statename not in ('District of Columbia','Puerto Rico', 'Alaska', 'Hawaii'):
+        pop = dataset[statename]
+        # calling colormap with value between 0 and 1 returns
+        # rgba value.  Invert color range (hot colors are high
+        # population), take sqrt root to spread out colors more.
+        colors[statename] = cmap(1.-np.sqrt((pop-vmin)/(vmax-vmin)))[:3]
+    statenames.append(statename)
+# cycle through state names, color each one.
+ax = plt.gca() # get current axes instance
 for nshape,seg in enumerate(m.states):
-if statenames[nshape] not in ['District of Columbia','Puerto Rico']:
-color = rgb2hex(colors[statenames[nshape]]) 
-poly = Polygon(seg,facecolor=color,edgecolor=color)
-ax.add_patch(poly)
-plt.title('Filling State Polygons by Population Density')
-plt.show() '''
+    # skip DC and Puerto Rico.
+    if statenames[nshape] not in ('District of Columbia','Puerto Rico', 'Alaska', 'Hawaii'):
+        color = rgb2hex(colors[statenames[nshape]]) 
+        poly = Polygon(seg,facecolor=color,edgecolor=color)
+        ax.add_patch(poly)
+plt.title('Percentage of Bilingual People By State')
+
+# legend https://stackoverflow.com/questions/2451264/creating-a-colormap-legend-in-matplotlib
+plt.show()
