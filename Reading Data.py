@@ -5,8 +5,8 @@ def first_question():
     '''
         Function to retrieve data for First Question
         Returns the number of people in the United States who speak each language
-        Returns in form of dictionary with the key as uppercase language and the value as the number of speakers
-        Ex. {"FRENCH",3000.00}
+        Returns in form of dictionary with the key as uppercase language (String) and the value as the number of speakers (float)
+        Ex. {"FRENCH",3000.0}
     '''
     #openDataFile
     datafile = open('2009-2013-languages-spoken-at-home-ability-to-speak-english-united-states.csv','r')
@@ -29,34 +29,21 @@ def first_question():
     #retrieve data
     for i in range(8,183): # Omit header lines
         if i in languages:
-            lst = data[i].split(',')
-            language = lst[0]
-            
-            while True:
-                if '.00' in lst[n]:
-                    speakers = lst[n]
-                    n=0
-                    break
-                else:
-                    n += 1
-                    
-            language = language.upper()
-            language = language.strip()
-            language = language.strip('\"')
-            language = language.strip('.')
-            if '(' in language:
-                language = language[:language.find('(')]
-            
+            language, speakers = line_parser1(data,i)
             languages_data[language] = speakers
             
         if i in Southeast_Asian_languages:
-            language, speakers = line_parser(data,i) #fix here
+            language, speakers = line_parser1(data,i)
             Southeast_Asian_languages_data[language] = speakers
+            total_speakers = 0
+            for language in Southeast_Asian_languages_data:
+                total_speakers += float(Southeast_Asian_languages_data[language])
+            
+            languages_data['SOUTHEAST ASIAN LANGUAGES'] = total_speakers
     
-    print Southeast_Asian_languages
     return languages_data
 
-def line_parser(data,i):
+def line_parser1(data,i):
     
     lst = data[i].split(',')
     language = lst[0]
@@ -66,18 +53,17 @@ def line_parser(data,i):
             
     while True:
         if '.00' in lst[n]:
-            speakers = lst[n]
+            speakers = float(lst[n])
             n=0
             break
         else:
             n += 1
                     
     language = language.upper()
-    language = language.strip()
     language = language.strip('\"')
     language = language.strip('.')
     if '(' in language:
         language = language[:language.find('(')]
+    language = language.strip()
     
-    print language, speakers
     return language, speakers
