@@ -227,9 +227,10 @@ def third_question():
                 'Puerto_Rico','Rhode_Island','South_Carolina','South_Dakota','Tennessee','Texas','Utah','Vermont','Virginia',
                 'Washington','West_Virginia','Wisconsin','Wyoming']
     '''
-    states = ['Alabama']
+    states = ['Alabama','Alaska', 'California']
     
     bilingual_people = {}
+    speak_english_well = {}
     
     for state in states:
         #openDataFile
