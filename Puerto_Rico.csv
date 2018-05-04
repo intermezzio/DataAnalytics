@@ -1,0 +1,71 @@
+Table with column headers in row 5 and row headers in column A,,,,
+Table 52. Detailed Languages Spoken at Home and Ability to Speak English for the Population 5 Years and Over for Puerto Rico:  2009-2013,,,,
+Release Date: October 2015,,,,
+,,,,
+,Number of speakers1,Margin of Error2,"Speak English less than ""Very Well""1",Margin of Error2
+.Population 5 years and over,"3,468,712",14,"2,775,382","6,676"
+Speak only English at home,"171,709","3,519",(X),(X)
+Speak a language other than English at home,"3,297,003","3,519","2,775,382","6,676"
+SPANISH AND SPANISH CREOLE,"3,291,956","3,671","2,772,729","6,786"
+..Spanish,"3,291,955","3,671","2,772,730","6,786"
+OTHER INDO-EUROPEAN LANGUAGES,"2,867",392,"1,030",211
+".French (incl. Patois, Cajun)","1,014",257,298,124
+..French,"1,015",257,300,124
+.French Creole,43,49,23,37
+.Italian,388,106,142,67
+.Portuguese (incl. Portuguese Creole),506,158,225,104
+..Portuguese,505,158,225,104
+.German (incl. Luxembourgian),389,149,123,88
+..German,390,149,125,88
+.Other West Germanic languages,40,42,(B),--
+..Dutch,40,42,(B),--
+.Greek,55,67,9,13
+.Russian,71,106,5,7
+.Polish,43,60,7,12
+.Other Slavic languages,63,60,42,50
+..Ukrainian,40,50,40,50
+..Bulgarian,(D),(D),(B),--
+.Persian,14,16,(B),--
+.Hindi,111,86,68,68
+.Urdu,12,19,(B),--
+.Other Indic languages,34,41,34,41
+..Bengali,(D),(D),(D),(D)
+..Nepali,15,17,15,17
+.Other Indo-European languages,84,67,54,45
+..Catalonian,75,65,55,45
+..Romanian,(D),(D),(B),--
+ASIAN AND PACIFIC ISLAND LANGUAGES,"1,649",605,"1,335",574
+".Chinese (incl. Cantonese, Mandarin, other Chinese languages4)","1,263",585,"1,195",577
+..Chinese,"1,055",526,"1,015",520
+..Cantonese,145,134,120,125
+..Mandarin,65,70,60,68
+.Japanese,122,102,40,40
+.Korean,69,55,37,34
+.Vietnamese,100,92,44,44
+.Other Asian languages,6,12,(B),--
+..Telugu,(D),(D),(B),--
+.Tagalog,71,64,19,23
+.Other Pacific Island languages,18,21,(B),--
+..Ilocano,(D),(D),(B),--
+..Chamorro,(D),(D),(B),--
+ALL OTHER LANGUAGES,531,218,288,148
+.Other Native North American languages,43,51,20,31
+..American Indian,45,51,(D),(D)
+.Arabic,348,168,268,145
+.Hebrew,90,117,(B),--
+.Other and unspecified languages,50,50,(B),--
+..Finnish,(D),(D),(B),--
+..Uncodable,25,26,(B),--
+,,,,
+"Notes:
+1 Detailed-language estimates are rounded to the nearest multiple of five. Aggregate estimates (bold-face entries) are unrounded and appear in table B16001 (http://factfinder.census.gov/bkmk/table/1.0/en/ACS/13_5YR/B16001/0400000US72). Detailed-language estimates may not sum to aggregate estimates because of rounding.",,,,
+"2 Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted roughly as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data at http://www2.census.gov/programs-surveys/acs/tech_docs/accuracy/MultiyearACSAccuracyofData2013.pdf). The effect of nonsampling error is not represented in these tables.",,,,
+"3 N.E.C. stands for not elsewhere classified.  These are languages where respondents indicated they spoke either Indian or Pakistan.  For Indian, it cannot be determined if the respondent spoke a native American language or spoke a language from India.  For Pakistan, respondents wrote in Pakistan but it cannot be determined which one of the languages spoken in Pakistan is actually being spoken.  To distinguish these languages, n.e.c. is used to indicated they are not classified in any other language code.",,,,
+"4 This category includes literal write-ins of Chinese as well as Hakka, Kan, Hsiang, Cantonese, Mandarin, Fuchow, Formosan, and Wu.",,,,
+(D) Data withheld to avoid disclosure.,,,,
+(B) Either no sample observations or too few sample observations were available to compute an estimate.,,,,
+(X) Question does not apply.,,,,
+--  Either no sample observations or too few sample observations were available to compute a standard error and thus the margin of error. A statistical test is not appropriate.,,,,
+"Source: U.S. Census Bureau, 2009-2013 American Community Survey",,,,
+Return to Index,,,,
+,,,,

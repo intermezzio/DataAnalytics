@@ -1,0 +1,195 @@
+Table with column headers in row 5 and row headers in column A,,,,
+Table 6. Detailed Languages Spoken at Home and Ability to Speak English for the Population 5 Years and Over for Colorado:  2009-2013,,,,
+Release Date: October 2015,,,,
+,,,,
+,Number of speakers1,Margin of Error2,"Speak English less than ""Very Well""1",Margin of Error2
+.Population 5 years and over,"4,779,527",437,"312,251","4,287"
+Speak only English at home,"3,976,875","7,959",(X),(X)
+Speak a language other than English at home,"802,652","7,936","312,251","4,287"
+SPANISH AND SPANISH CREOLE,"565,058","6,145","230,423","3,833"
+..Spanish,"565,060","6,145","230,425","3,833"
+OTHER INDO-EUROPEAN LANGUAGES,"110,342","3,234","25,041","1,398"
+".French (incl. Patois, Cajun)","16,213","1,050","2,462",433
+..French,"16,045","1,032","2,460",433
+..Patois,165,120,(B),--
+..Cajun,(D),(D),(B),--
+.French Creole,382,209,106,81
+.Italian,"5,767",725,737,181
+.Portuguese (incl. Portuguese Creole),"3,370",566,695,250
+..Portuguese,"3,360",565,695,250
+..Papia Mentae,(D),(D),(B),--
+.German (incl. Luxembourgian),"25,675","1,307","3,047",342
+..German,"25,645","1,307","3,045",342
+..Luxembourgian,(D),(D),(B),--
+.Yiddish,135,64,15,17
+.Other West Germanic languages,"3,275",589,246,115
+..Pennsylvania Dutch,330,226,(D),(D)
+..Dutch,"2,065",345,160,72
+..Afrikaans,880,300,70,74
+.Scandinavian languages,"2,881",483,273,104
+..Swedish,"1,600",394,110,60
+..Danish,480,159,75,55
+..Norwegian,740,227,90,75
+..Icelandic,60,58,(B),--
+.Greek,"1,910",367,461,187
+.Russian,"15,124","1,565","6,279",807
+.Polish,"5,365",649,"1,175",321
+.Serbo-Croatian languages,"2,531",500,987,225
+..Serbocroatian,"1,680",464,685,204
+..Croatian,395,135,90,64
+..Serbian,455,166,210,96
+.Other Slavic languages,"4,101",733,"1,223",354
+..Bielorussian,25,22,(D),(D)
+..Ukrainian,"1,280",378,525,207
+..Czech,880,256,210,95
+..Slovak,540,208,25,26
+..Bulgarian,"1,185",469,420,200
+..Macedonian,35,31,(B),--
+..Slovene,160,75,(D),(D)
+.Armenian,583,236,225,167
+.Persian,"4,090",650,"1,237",283
+.Hindi,"4,171",563,623,209
+.Gujarati,762,256,182,107
+.Urdu,"1,613",492,460,252
+.Other Indic languages,"7,862","1,055","3,073",718
+..India n.e.c.3,500,261,60,41
+..Bengali,"1,350",434,345,123
+..Panjabi,"1,105",446,235,139
+..Marathi,730,288,215,204
+..Rajasthani,85,130,(D),(D)
+..Oriya,55,55,(B),--
+..Nepali,"3,615",831,"2,095",649
+..Sindhi,250,169,(B),--
+..Pakistan n.e.c.3,95,139,55,99
+..Sinhalese,55,45,(D),(D)
+..Romany,(D),(D),(D),(D)
+.Other Indo-European languages,"4,532",830,"1,535",580
+..Jamaican Creole,600,510,540,490
+..Krio,115,97,(B),--
+..Pidgin,55,43,(B),--
+..Catalonian,180,121,70,82
+..Romanian,"1,455",354,415,186
+..Welsh,70,48,(D),(D)
+..Irish Gaelic,330,164,20,19
+..Scottic Gaelic,90,91,(D),(D)
+..Albanian,175,143,55,69
+..Lithuanian,610,238,155,88
+..Latvian,125,58,(D),(D)
+..Pashto,430,267,125,103
+..Kurdish,295,183,70,72
+ASIAN AND PACIFIC ISLAND LANGUAGES,"91,051","1,758","42,929","1,190"
+".Chinese (incl. Cantonese, Mandarin, other Chinese languages4)","19,020","1,496","9,428",974
+..Chinese,"14,380","1,163","7,390",785
+..Hakka,(D),(D),(B),--
+..Cantonese,"1,940",535,890,308
+..Mandarin,"2,230",459,980,287
+..Formosan,465,163,165,117
+.Japanese,"6,071",706,"1,751",263
+.Korean,"15,629","1,162","8,180",692
+".Mon-Khmer, Cambodian","2,210",603,950,379
+.Hmong,"3,008",725,"1,037",317
+.Thai,"1,950",380,"1,084",271
+.Laotian,"2,175",713,981,313
+.Vietnamese,"20,099","1,706","12,700","1,121"
+.Other Asian languages,"9,628","1,089","3,350",644
+..Kazakh,30,36,(B),--
+..Uighur,80,82,60,67
+..Azerbaijani,(D),(D),(D),(D)
+..Turkish,"1,180",414,625,332
+..Mongolian,715,337,375,196
+..Telugu,"2,405",575,465,189
+..Kannada,380,150,35,41
+..Malayalam,925,320,205,121
+..Tamil,"1,920",512,125,85
+..Tibetan,430,174,200,127
+..Burmese,775,374,630,317
+..Karen,745,417,615,361
+..Mien,(D),(D),(B),--
+.Tagalog,"7,293",835,"1,970",420
+.Other Pacific Island languages,"3,968",614,"1,498",311
+..Indonesian,"1,390",397,635,205
+..Javanese,(D),(D),(B),--
+..Malay,255,152,80,90
+..Sundanese,(D),(D),(D),(D)
+..Bisayan,140,92,60,73
+..Sebuano,150,136,55,58
+..Ilocano,225,137,100,85
+..Pampangan,140,104,95,98
+..Micronesian,15,20,(D),(D)
+..Chamorro,360,143,90,86
+..Marshallese,50,142,30,91
+..Palau,110,84,55,59
+..Trukese,115,122,45,82
+..Yapese,(D),(D),(D),(D)
+..Polynesian,(D),(D),(B),--
+..Samoan,365,181,45,59
+..Tongan,215,130,55,45
+..Maori,(D),(D),(D),(D)
+..Hawaiian,365,150,95,73
+ALL OTHER LANGUAGES,"36,201","2,388","13,858","1,216"
+.Navajo,"2,937",525,319,151
+.Other Native North American languages,"2,244",341,413,172
+..Eskimo,40,42,(B),--
+..Inupik,10,8,(B),--
+..Yupik,80,59,(B),--
+..Algonquian,(D),(D),(B),--
+..Arapaho,(D),(D),(B),--
+..Blackfoot,(D),(D),(B),--
+..Cheyenne,65,63,65,62
+..Cree,180,127,95,102
+..Delaware,(D),(D),(B),--
+..Fox,(D),(D),(B),--
+..Menomini,90,94,(D),(D)
+..Ojibwa,40,55,(B),--
+..Apache,120,78,55,61
+..Tlingit,(D),(D),(B),--
+..Foothill North Yokuts,(D),(D),(D),(D)
+..Dakota,360,162,70,52
+..Omaha,(D),(D),(B),--
+..Choctaw,(D),(D),(D),(D)
+..Cherokee,100,63,(B),--
+..Ute,725,174,75,36
+..Tewa,40,45,(B),--
+..Towa,35,39,(B),--
+..Zuni,(D),(D),(B),--
+..American Indian,95,59,(D),(D)
+..San Carlos,(D),(D),(B),--
+.Hungarian,"1,322",280,302,147
+.Arabic,"9,692","1,208","4,116",758
+.Hebrew,"1,650",428,216,111
+.African languages,"17,500","1,597","8,148",995
+..Amharic,"8,735","1,135","4,200",701
+..Berber,70,47,60,45
+..Chadic,35,41,(B),--
+..Cushite,"2,685",561,"1,610",393
+..Sudanic,125,172,75,112
+..Nilotic,95,120,70,114
+..Swahili,815,299,340,213
+..Bantu,650,280,335,220
+..Mande,290,140,170,97
+..Fulani,185,125,45,38
+"..Kru, Ibo, Yoruba","3,715",812,"1,220",352
+..African,105,76,(D),(D)
+.Other and unspecified languages,856,271,344,164
+..Finnish,265,99,100,63
+..Estonian,60,51,(D),(D)
+..Basque,45,40,(D),(D)
+..Syriac,(D),(D),(B),--
+..Sonoran,60,68,60,68
+..Mayan languages,195,174,155,130
+..Oto - Manguen,(D),(D),(B),--
+..Tupi-Guarani,(D),(D),(B),--
+..Uncodable,190,155,(B),--
+,,,,
+"Notes:
+1 Detailed-language estimates are rounded to the nearest multiple of five. Aggregate estimates (bold-face entries) are unrounded and appear in table B16001 (http://factfinder.census.gov/bkmk/table/1.0/en/ACS/13_5YR/B16001/0400000US08). Detailed-language estimates may not sum to aggregate estimates because of rounding.",,,,
+"2 Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted roughly as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data at http://www2.census.gov/programs-surveys/acs/tech_docs/accuracy/MultiyearACSAccuracyofData2013.pdf). The effect of nonsampling error is not represented in these tables.",,,,
+"3 N.E.C. stands for not elsewhere classified.  These are languages where respondents indicated they spoke either Indian or Pakistan.  For Indian, it cannot be determined if the respondent spoke a native American language or spoke a language from India.  For Pakistan, respondents wrote in Pakistan but it cannot be determined which one of the languages spoken in Pakistan is actually being spoken.  To distinguish these languages, n.e.c. is used to indicated they are not classified in any other language code.",,,,
+"4 This category includes literal write-ins of Chinese as well as Hakka, Kan, Hsiang, Cantonese, Mandarin, Fuchow, Formosan, and Wu.",,,,
+(D) Data withheld to avoid disclosure.,,,,
+(B) Either no sample observations or too few sample observations were available to compute an estimate.,,,,
+(X) Question does not apply.,,,,
+--  Either no sample observations or too few sample observations were available to compute a standard error and thus the margin of error. A statistical test is not appropriate.,,,,
+"Source: U.S. Census Bureau, 2009-2013 American Community Survey",,,,
+Return to Index,,,,
+,,,,
