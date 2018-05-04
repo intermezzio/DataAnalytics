@@ -181,6 +181,4 @@ def line_parser2(data,i):
         language = language[:language.find('(')]
     language = language.strip()
     
-    print language, speakers
-    
     return language, speakers
