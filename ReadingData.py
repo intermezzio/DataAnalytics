@@ -238,17 +238,18 @@ def third_question():
             
             data = datafile.readlines()
             
+            #edit state name String
             state_name = state.replace('_',' ')
             
+            #get data for bilingual in each state and people who speak english well
             bilingual, well = bilingual_people_by_state(data, False)
             bilingual_people[state_name] = bilingual
             speak_english_well[state_name] = well
-            
+    
+    #calculate percentages        
     for state in bilingual_people:
         percentages[state] = 100 - (speak_english_well[state] / (bilingual_people[state] * 0.01))
     
-    print speak_english_well
-    print bilingual_people
     return percentages
 
 def fourth_question():
@@ -276,17 +277,18 @@ def fourth_question():
             
             data = datafile.readlines()
             
+            #edit name of String
             state_name = state.replace('_',' ')
             
+            #get data for bilingual in each state and total state population
             bilingual, total = bilingual_people_by_state(data, True)
             bilingual_people[state_name] = bilingual
             total_people[state_name] = total
-            
+    
+    #calculate percentages        
     for state in bilingual_people:
         percentages[state] = bilingual_people[state] / (total_people[state] * 0.01)
     
-    print total_people
-    print bilingual_people
     return percentages      
 
 def bilingual_people_by_state(data, total):
