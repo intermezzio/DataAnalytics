@@ -240,7 +240,7 @@ def third_question():
             
             state_name = state.replace('_',' ')
             
-            bilingual, well = bilingual_people_by_state(data, False, state_name)
+            bilingual, well = bilingual_people_by_state(data, False)
             bilingual_people[state_name] = bilingual
             speak_english_well[state_name] = well
             
@@ -267,7 +267,7 @@ def fourth_question():
                 'Washington','West_Virginia','Wisconsin','Wyoming']
     
     bilingual_people = {}
-    speak_english_well = {}
+    total_people = {}
     percentages = {}
     
     for state in states:
@@ -278,18 +278,18 @@ def fourth_question():
             
             state_name = state.replace('_',' ')
             
-            bilingual, well = bilingual_people_by_state(data, False)
+            bilingual, total = bilingual_people_by_state(data, True)
             bilingual_people[state_name] = bilingual
-            speak_english_well[state_name] = well
+            total_people[state_name] = total
             
     for state in bilingual_people:
-        percentages[state] = 100 - (speak_english_well[state] / (bilingual_people[state] * 0.01))
+        percentages[state] = bilingual_people[state] / (total_people[state] * 0.01)
     
-    print speak_english_well
+    print total_people
     print bilingual_people
     return percentages      
 
-def bilingual_people_by_state(data, total, state):
+def bilingual_people_by_state(data, total):
     '''
     Function to return the number of bilingual people by state, and a second value that depends on total
     Returns two floats
