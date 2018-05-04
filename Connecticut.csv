@@ -3,161 +3,161 @@ Table 7. Detailed Languages Spoken at Home and Ability to Speak English for the 
 Release Date: October 2015,,,,
 ,,,,
 ,Number of speakers1,Margin of Error2,"Speak English less than ""Very Well""1",Margin of Error2
-.Population 5 years and over,"3,386,166",207,"283,518","4,351"
-Speak only English at home,"2,658,925","5,118",(X),(X)
-Speak a language other than English at home,"727,241","5,133","283,518","4,351"
-SPANISH AND SPANISH CREOLE,"371,024","3,078","156,236","3,067"
-..Spanish,"371,025","3,078","156,235","3,067"
-OTHER INDO-EUROPEAN LANGUAGES,"254,783","4,336","85,770","2,798"
-".French (incl. Patois, Cajun)","34,519","1,270","7,863",806
-..French,"30,575","1,248","7,435",803
-..Patois,"3,930",705,430,150
+.Population 5 years and over,3386166.00,207,283518.00,"4,351"
+Speak only English at home,2658925.00,"5,118",(X),(X)
+Speak a language other than English at home,727241.00,"5,133",283518.00,"4,351"
+SPANISH AND SPANISH CREOLE,371024.00,"3,078",156236.00,"3,067"
+..Spanish,371025.00,"3,078",156235.00,"3,067"
+OTHER INDO-EUROPEAN LANGUAGES,254783.00,"4,336",85770.00,"2,798"
+".French (incl. Patois, Cajun)",34519.00,"1,270",7863.00,806
+..French,30575.00,"1,248",7435.00,803
+..Patois,3930.00,705,430.00,150
 ..Cajun,(D),(D),(B),--
-.French Creole,"14,081","1,277","6,073",735
-.Italian,"36,571","1,374","10,365",797
-.Portuguese (incl. Portuguese Creole),"37,016","2,153","16,954","1,327"
-..Portuguese,"36,945","2,155","16,955","1,327"
-..Papia Mentae,75,87,(B),--
-.German (incl. Luxembourgian),"11,533",807,"1,451",256
-..German,"11,535",807,"1,450",256
-.Yiddish,353,105,20,23
-.Other West Germanic languages,"2,027",415,175,107
-..Dutch,"1,825",404,170,109
-..Afrikaans,205,102,(D),(D)
-.Scandinavian languages,"2,233",352,208,83
-..Swedish,"1,290",253,140,76
-..Danish,390,163,25,30
-..Norwegian,535,149,45,37
-..Icelandic,20,20,(B),--
-.Greek,"8,670",777,"2,195",351
-.Russian,"10,684",932,"4,920",527
-.Polish,"37,704","2,251","15,640","1,241"
-.Serbo-Croatian languages,"4,160",721,"1,636",374
-..Serbocroatian,"2,640",541,"1,050",280
-..Croatian,985,412,280,153
-..Serbian,535,277,305,198
-.Other Slavic languages,"4,812",651,"1,552",392
-..Ukrainian,"2,190",468,925,247
-..Czech,490,167,40,38
-..Slovak,"1,040",295,275,146
-..Bulgarian,480,198,105,107
-..Macedonian,440,242,185,179
-..Slovene,175,125,20,17
-.Armenian,731,220,152,72
-.Persian,"1,488",293,441,144
-.Hindi,"11,430","1,173","2,561",640
-.Gujarati,"5,647",869,"2,109",416
-.Urdu,"6,282","1,024","2,000",573
-.Other Indic languages,"10,873",980,"4,111",594
-..India n.e.c.3,"1,130",317,245,106
-..Bengali,"4,745",814,"2,225",551
-..Panjabi,"1,590",401,385,146
-..Marathi,885,276,150,107
+.French Creole,14081.00,"1,277",6073.00,735
+.Italian,36571.00,"1,374",10365.00,797
+.Portuguese (incl. Portuguese Creole),37016.00,"2,153",16954.00,"1,327"
+..Portuguese,36945.00,"2,155",16955.00,"1,327"
+..Papia Mentae,75.00,87,(B),--
+.German (incl. Luxembourgian),11533.00,807,1451.00,256
+..German,11535.00,807,1450.00,256
+.Yiddish,353.00,105,20.00,23
+.Other West Germanic languages,2027.00,415,175.00,107
+..Dutch,1825.00,404,170.00,109
+..Afrikaans,205.00,102,(D),(D)
+.Scandinavian languages,2233.00,352,208.00,83
+..Swedish,1290.00,253,140.00,76
+..Danish,390.00,163,25.00,30
+..Norwegian,535.00,149,45.00,37
+..Icelandic,20.00,20,(B),--
+.Greek,8670.00,777,2195.00,351
+.Russian,10684.00,932,4920.00,527
+.Polish,37704.00,"2,251",15640.00,"1,241"
+.Serbo-Croatian languages,4160.00,721,1636.00,374
+..Serbocroatian,2640.00,541,1050.00,280
+..Croatian,985.00,412,280.00,153
+..Serbian,535.00,277,305.00,198
+.Other Slavic languages,4812.00,651,1552.00,392
+..Ukrainian,2190.00,468,925.00,247
+..Czech,490.00,167,40.00,38
+..Slovak,1040.00,295,275.00,146
+..Bulgarian,480.00,198,105.00,107
+..Macedonian,440.00,242,185.00,179
+..Slovene,175.00,125,20.00,17
+.Armenian,731.00,220,152.00,72
+.Persian,1488.00,293,441.00,144
+.Hindi,11430.00,"1,173",2561.00,640
+.Gujarati,5647.00,869,2109.00,416
+.Urdu,6282.00,"1,024",2000.00,573
+.Other Indic languages,10873.00,980,4111.00,594
+..India n.e.c.3,1130.00,317,245.00,106
+..Bengali,4745.00,814,2225.00,551
+..Panjabi,1590.00,401,385.00,146
+..Marathi,885.00,276,150.00,107
 ..Bihari,(D),(D),(B),--
-..Oriya,160,132,55,72
-..Assamese,60,63,(B),--
-..Nepali,"1,325",412,615,256
-..Sindhi,230,255,(D),(D)
-..Pakistan n.e.c.3,200,156,140,125
-..Sinhalese,455,203,195,106
-..Romany,80,92,80,92
-.Other Indo-European languages,"13,969","1,310","5,344",658
-..Jamaican Creole,"1,600",410,640,237
+..Oriya,160.00,132,55.00,72
+..Assamese,60.00,63,(B),--
+..Nepali,1325.00,412,615.00,256
+..Sindhi,230.00,255,(D),(D)
+..Pakistan n.e.c.3,200.00,156,140.00,125
+..Sinhalese,455.00,203,195.00,106
+..Romany,80.00,92,80.00,92
+.Other Indo-European languages,13969.00,"1,310",5344.00,658
+..Jamaican Creole,1600.00,410,640.00,237
 ..Krio,(D),(D),(B),--
 ..Catalonian,(D),(D),(B),--
-..Romanian,"1,860",414,490,162
-..Welsh,35,33,(B),--
-..Irish Gaelic,290,101,35,28
-..Scottic Gaelic,55,48,(B),--
-..Albanian,"7,430",996,"3,295",505
-..Lithuanian,"1,420",343,270,112
-..Latvian,400,166,130,73
-..Pashto,345,276,310,268
-..Kurdish,490,313,175,135
-ASIAN AND PACIFIC ISLAND LANGUAGES,"76,859","1,952","33,934","1,456"
-".Chinese (incl. Cantonese, Mandarin, other Chinese languages4)","27,002","1,733","13,034","1,111"
-..Chinese,"20,945","1,562","10,415",986
-..Cantonese,"2,250",587,"1,000",393
-..Mandarin,"3,180",560,"1,350",331
+..Romanian,1860.00,414,490.00,162
+..Welsh,35.00,33,(B),--
+..Irish Gaelic,290.00,101,35.00,28
+..Scottic Gaelic,55.00,48,(B),--
+..Albanian,7430.00,996,3295.00,505
+..Lithuanian,1420.00,343,270.00,112
+..Latvian,400.00,166,130.00,73
+..Pashto,345.00,276,310.00,268
+..Kurdish,490.00,313,175.00,135
+ASIAN AND PACIFIC ISLAND LANGUAGES,76859.00,"1,952",33934.00,"1,456"
+".Chinese (incl. Cantonese, Mandarin, other Chinese languages4)",27002.00,"1,733",13034.00,"1,111"
+..Chinese,20945.00,"1,562",10415.00,986
+..Cantonese,2250.00,587,1000.00,393
+..Mandarin,3180.00,560,1350.00,331
 ..Fuchow,(D),(D),(D),(D)
-..Formosan,500,218,205,114
-..Wu,90,84,(D),(D)
-.Japanese,"3,391",606,"1,550",529
-.Korean,"6,456",802,"3,449",576
-".Mon-Khmer, Cambodian","2,456",607,"1,244",332
-.Hmong,9,15,(B),--
-.Thai,"1,401",418,753,322
-.Laotian,"2,981",668,"1,476",395
-.Vietnamese,"7,735","1,192","4,840",806
-.Other Asian languages,"15,932","1,492","4,542",652
+..Formosan,500.00,218,205.00,114
+..Wu,90.00,84,(D),(D)
+.Japanese,3391.00,606,1550.00,529
+.Korean,6456.00,802,3449.00,576
+".Mon-Khmer, Cambodian",2456.00,607,1244.00,332
+.Hmong,9.00,15,(B),--
+.Thai,1401.00,418,753.00,322
+.Laotian,2981.00,668,1476.00,395
+.Vietnamese,7735.00,"1,192",4840.00,806
+.Other Asian languages,15932.00,"1,492",4542.00,652
 ..Karachay,(D),(D),(D),(D)
-..Uighur,95,111,(D),(D)
-..Turkish,"2,195",457,935,253
+..Uighur,95.00,111,(D),(D)
+..Turkish,2195.00,457,935.00,253
 ..Tungus,(D),(D),(D),(D)
 ..Dravidian,(D),(D),(B),--
-..Gondi,120,129,(B),--
-..Telugu,"5,575",825,"1,625",401
-..Kannada,860,300,(D),(D)
-..Malayalam,"2,395",572,475,200
-..Tamil,"3,745",698,925,324
-..Munda,125,122,(B),--
-..Tibetan,455,275,230,142
-..Burmese,205,133,140,91
-..Karen,125,106,125,106
-.Tagalog,"8,539",883,"2,663",473
-.Other Pacific Island languages,957,285,383,151
-..Indonesian,235,125,115,86
-..Malay,180,107,45,46
-..Bisayan,120,83,60,43
-..Sebuano,60,40,(D),(D)
-..Ilocano,15,27,(D),(D)
+..Gondi,120.00,129,(B),--
+..Telugu,5575.00,825,1625.00,401
+..Kannada,860.00,300,(D),(D)
+..Malayalam,2395.00,572,475.00,200
+..Tamil,3745.00,698,925.00,324
+..Munda,125.00,122,(B),--
+..Tibetan,455.00,275,230.00,142
+..Burmese,205.00,133,140.00,91
+..Karen,125.00,106,125.00,106
+.Tagalog,8539.00,883,2663.00,473
+.Other Pacific Island languages,957.00,285,383.00,151
+..Indonesian,235.00,125,115.00,86
+..Malay,180.00,107,45.00,46
+..Bisayan,120.00,83,60.00,43
+..Sebuano,60.00,40,(D),(D)
+..Ilocano,15.00,27,(D),(D)
 ..Bikol,(D),(D),(D),(D)
 ..Micronesian,(D),(D),(B),--
-..Chamorro,155,122,30,32
+..Chamorro,155.00,122,30.00,32
 ..Palau,(D),(D),(B),--
 ..Trukese,(D),(D),(D),(D)
-..Melanesian,35,37,(D),(D)
+..Melanesian,35.00,37,(D),(D)
 ..Samoan,(D),(D),(D),(D)
 ..Hawaiian,(D),(D),(B),--
-ALL OTHER LANGUAGES,"24,575","1,912","7,578",997
-.Other Native North American languages,260,109,71,44
-..Algonquian,60,72,(D),(D)
+ALL OTHER LANGUAGES,24575.00,"1,912",7578.00,997
+.Other Native North American languages,260.00,109,71.00,44
+..Algonquian,60.00,72,(D),(D)
 ..Blackfoot,(D),(D),(B),--
 ..Delaware,(D),(D),(B),--
 ..Ottawa,(D),(D),(D),(D)
-..Potawatomi,40,40,(D),(D)
+..Potawatomi,40.00,40,(D),(D)
 ..Puget Sound Salish,(D),(D),(B),--
 ..Hidatsa,(D),(D),(D),(D)
-..Dakota,10,16,(B),--
+..Dakota,10.00,16,(B),--
 ..Mohawk,(D),(D),(B),--
 ..Towa,(D),(D),(D),(D)
-..American Indian,50,47,20,36
-.Hungarian,"2,764",459,780,223
-.Arabic,"9,271","1,371","3,893",752
-.Hebrew,"2,762",582,343,120
-.African languages,"8,553","1,137","2,257",530
-..Amharic,380,187,160,118
+..American Indian,50.00,47,20.00,36
+.Hungarian,2764.00,459,780.00,223
+.Arabic,9271.00,"1,371",3893.00,752
+.Hebrew,2762.00,582,343.00,120
+.African languages,8553.00,"1,137",2257.00,530
+..Amharic,380.00,187,160.00,118
 ..Berber,(D),(D),(D),(D)
-..Chadic,385,319,115,127
-..Cushite,365,246,255,223
-..Nilotic,35,31,(B),--
-..Swahili,880,480,225,147
-..Bantu,640,314,180,156
-..Mande,170,188,30,71
-..Fulani,250,325,(D),(D)
+..Chadic,385.00,319,115.00,127
+..Cushite,365.00,246,255.00,223
+..Nilotic,35.00,31,(B),--
+..Swahili,880.00,480,225.00,147
+..Bantu,640.00,314,180.00,156
+..Mande,170.00,188,30.00,71
+..Fulani,250.00,325,(D),(D)
 ..Gur,(D),(D),(B),--
-"..Kru, Ibo, Yoruba","5,165",723,"1,085",349
+"..Kru, Ibo, Yoruba",5165.00,723,1085.00,349
 ..Efik,(D),(D),(D),(D)
-..African,195,108,95,57
-.Other and unspecified languages,965,226,234,84
-..Finnish,340,150,60,53
-..Estonian,170,112,35,33
-..Caucasian,50,40,45,39
+..African,195.00,108,95.00,57
+.Other and unspecified languages,965.00,226,234.00,84
+..Finnish,340.00,150,60.00,53
+..Estonian,170.00,112,35.00,33
+..Caucasian,50.00,40,45.00,39
 ..Basque,(D),(D),(B),--
-..Syriac,225,100,35,30
-..Quechua,40,45,(D),(D)
+..Syriac,225.00,100,35.00,30
+..Quechua,40.00,45,(D),(D)
 ..Tupi-Guarani,(D),(D),(D),(D)
-..Uncodable,120,68,(D),(D)
+..Uncodable,120.00,68,(D),(D)
 ,,,,
 "Notes:
 1 Detailed-language estimates are rounded to the nearest multiple of five. Aggregate estimates (bold-face entries) are unrounded and appear in table B16001 (http://factfinder.census.gov/bkmk/table/1.0/en/ACS/13_5YR/B16001/0400000US09). Detailed-language estimates may not sum to aggregate estimates because of rounding.",,,,
@@ -167,7 +167,6 @@ ALL OTHER LANGUAGES,"24,575","1,912","7,578",997
 (D) Data withheld to avoid disclosure.,,,,
 (B) Either no sample observations or too few sample observations were available to compute an estimate.,,,,
 (X) Question does not apply.,,,,
---  Either no sample observations or too few sample observations were available to compute a standard error and thus the margin of error. A statistical test is not appropriate.,,,,
+#NAME?,,,,
 "Source: U.S. Census Bureau, 2009-2013 American Community Survey",,,,
 Return to Index,,,,
-,,,,
