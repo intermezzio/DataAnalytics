@@ -219,15 +219,14 @@ def third_question():
         Ex. {"FRENCH",50.0}
     '''
     #list of states
-    '''
     states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District_of_Columbia',
                 'Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland',
                 'Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New_Hampshire',
                 'New_Jersey','New_Mexico','New_York','North_Carolina','North_Dakota','Ohio','Oklahoma','Oregon','Pennsylvania',
                 'Puerto_Rico','Rhode_Island','South_Carolina','South_Dakota','Tennessee','Texas','Utah','Vermont','Virginia',
                 'Washington','West_Virginia','Wisconsin','Wyoming']
-    '''
-    states = ['Alabama','Alaska', 'Arizona', 'Arkansas', 'California', 'Connecticut']
+    
+    #states = ['Alabama','Alaska', 'Arizona', 'Arkansas', 'California', 'Connecticut']
     
     bilingual_people = {}
     speak_english_well = {}
@@ -241,7 +240,7 @@ def third_question():
             
             state_name = state.replace('_',' ')
             
-            bilingual, well = bilingual_people_by_state(data, False)
+            bilingual, well = bilingual_people_by_state(data, False, state_name)
             bilingual_people[state_name] = bilingual
             speak_english_well[state_name] = well
             
@@ -293,7 +292,7 @@ def fourth_question():
     print bilingual_people
     return percentages      
 
-def bilingual_people_by_state(data, total):
+def bilingual_people_by_state(data, total, state):
     '''
     Function to return the number of bilingual people by state, and a second value that depends on total
     Returns two floats
