@@ -241,14 +241,14 @@ def third_question():
             
             state_name = state.replace('_',' ')
             
-            bilingual, total = bilingual_people_by_state(data, False)
+            bilingual, well = bilingual_people_by_state(data, False)
             bilingual_people[state_name] = bilingual
-            speak_english_well[state_name] = total
+            speak_english_well[state_name] = well
             
     for state in bilingual_people:
         percentages[state] = 100 - (speak_english_well[state] / (bilingual_people[state] * 0.01))
     
-    print speak_english_well #FIX PERCENTAGES
+    print speak_english_well
     print bilingual_people
     return percentages
         
@@ -285,6 +285,8 @@ def bilingual_people_by_state(data, total):
             
         else:
             n += 1
+    
+    n = 0
         
     if total:
         #total number of people
@@ -298,5 +300,7 @@ def bilingual_people_by_state(data, total):
             
             else:
                 n += 1
+    
+    n = 0
     
     return speakers, speakers2
