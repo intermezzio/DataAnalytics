@@ -214,6 +214,47 @@ def line_parser2(data,i):
 def third_question():
     '''
         Function to retrieve data for Third Question
+        Returns the percentage of people in each state who speak another language who speak english well
+        Returns in form of dictionary with the key as uppercase language (String) and the value as the percentage of people who speak english well (float)
+        Ex. {"FRENCH",50.0}
+    '''
+    #list of states
+    '''
+    states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District_of_Columbia',
+                'Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland',
+                'Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New_Hampshire',
+                'New_Jersey','New_Mexico','New_York','North_Carolina','North_Dakota','Ohio','Oklahoma','Oregon','Pennsylvania',
+                'Puerto_Rico','Rhode_Island','South_Carolina','South_Dakota','Tennessee','Texas','Utah','Vermont','Virginia',
+                'Washington','West_Virginia','Wisconsin','Wyoming']
+    '''
+    states = ['Alabama','Alaska', 'Arizona', 'Arkansas', 'California', 'Connecticut']
+    
+    bilingual_people = {}
+    speak_english_well = {}
+    percentages = {}
+    
+    for state in states:
+        #openDataFile
+        with open(state + '.csv','r') as datafile:
+            
+            data = datafile.readlines()
+            
+            state_name = state.replace('_',' ')
+            
+            bilingual, well = bilingual_people_by_state(data, False)
+            bilingual_people[state_name] = bilingual
+            speak_english_well[state_name] = well
+            
+    for state in bilingual_people:
+        percentages[state] = 100 - (speak_english_well[state] / (bilingual_people[state] * 0.01))
+    
+    print speak_english_well
+    print bilingual_people
+    return percentages
+
+def fourth_question():
+    '''
+        Function to retrieve data for Fourth Question
         Returns the number of people in the United States who speak each language
         Returns in form of dictionary with the key as uppercase language (String) and the value as the number of speakers (float)
         Ex. {"FRENCH",3000.0}
@@ -241,17 +282,16 @@ def third_question():
             
             state_name = state.replace('_',' ')
             
-            bilingual, total = bilingual_people_by_state(data, False)
+            bilingual, well = bilingual_people_by_state(data, False)
             bilingual_people[state_name] = bilingual
-            speak_english_well[state_name] = total
+            speak_english_well[state_name] = well
             
     for state in bilingual_people:
         percentages[state] = 100 - (speak_english_well[state] / (bilingual_people[state] * 0.01))
     
-    print speak_english_well #FIX PERCENTAGES
+    print speak_english_well
     print bilingual_people
-    return percentages
-        
+    return percentages      
 
 def bilingual_people_by_state(data, total):
     '''
@@ -285,6 +325,8 @@ def bilingual_people_by_state(data, total):
             
         else:
             n += 1
+    
+    n = 0
         
     if total:
         #total number of people
@@ -298,5 +340,7 @@ def bilingual_people_by_state(data, total):
             
             else:
                 n += 1
+    
+    n = 0
     
     return speakers, speakers2
