@@ -227,7 +227,7 @@ def third_question():
                 'Puerto_Rico','Rhode_Island','South_Carolina','South_Dakota','Tennessee','Texas','Utah','Vermont','Virginia',
                 'Washington','West_Virginia','Wisconsin','Wyoming']
     '''
-    states = ['Alabama','Alaska', 'Arizona', 'Arkansas', 'California']
+    states = ['Alabama','Alaska', 'Arizona', 'Arkansas', 'California', 'Connecticut']
     
     bilingual_people = {}
     speak_english_well = {}
@@ -245,8 +245,12 @@ def third_question():
             bilingual_people[state_name] = bilingual
             speak_english_well[state_name] = total
             
-    print speak_english_well
-    return bilingual_people
+    for state in bilingual_people:
+        percentages[state] = 100 - (speak_english_well[state] / (bilingual_people[state] * 0.01))
+    
+    print speak_english_well #FIX PERCENTAGES
+    print bilingual_people
+    return percentages
         
 
 def bilingual_people_by_state(data, total):
@@ -275,7 +279,7 @@ def bilingual_people_by_state(data, total):
             
             if not total:
                 #number of people who speak english well
-                speakers2 = float(lst[n+2])
+                speakers2 = float(lst[n+3])
             
             break
             
