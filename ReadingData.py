@@ -68,20 +68,29 @@ def first_question():
     return languages_data
 
 def line_parser1(data,i):
+    '''
+    Function to parse data for first question
+    Returns a String and a float
+    String language = uppercase language
+    Float speakers = number of people who speak that language
+    '''
+    #split data
     lst = data[i].split(',')
-    language = lst[0]
-    speakers = 0
+    language = lst[0] #get language
+    
+    speakers = 0 #keep track of number of speakers
     
     n = 0 #counter
             
-    while True:
+    while True: #get number of speakers
         if '.00' in lst[n]:
             speakers = float(lst[n])
             n=0
             break
         else:
             n += 1
-                    
+            
+    #format language String               
     language = language.upper()
     language = language.strip('\"')
     language = language.strip('.')
@@ -92,6 +101,12 @@ def line_parser1(data,i):
     return language, speakers
 
 def second_question():
+    '''
+        Function to retrieve data for Second Question
+        Returns the percentage of people in the United States who speak English well out of all bilingual people
+        Returns in form of dictionary with the key as uppercase language (String) and the value as the percentage of speakers (float)
+        Ex. {"FRENCH",50.0}
+    '''
     #openDataFile
     datafile = open('2009-2013-languages-spoken-at-home-ability-to-speak-english-united-states.csv','r')
     data = datafile.readlines()
@@ -157,23 +172,36 @@ def second_question():
         percent = speak_english_well_data[language] / (total_speakers[language] * 0.01)
         percentages[language] = percent
     
+    datafile.close()
+    
     return percentages
 
 def line_parser2(data,i):
+    '''
+    Function to parse data for second question
+    Returns a String and a float
+    String language = uppercase language
+    Float speakers = number of people who speak that language speak English well language
+    '''
+    #split data
     lst = data[i].split(',')
-    language = lst[0]
+    language = lst[0] #get language
+    
+    #keep track of number of speakers who speak english well
     speakers = 0
     
     n = 0 #counter
-            
+        
+    #get number of speakers who speak english well     
     while True:
         if '.00' in lst[n]:
-            speakers = float(lst[n+2])
+            speakers = float(lst[n+2]) #the number who speak english well is two columns down from the first number
             n=0
             break
         else:
             n += 1
-                    
+             
+    #format language String                       
     language = language.upper()
     language = language.strip('\"')
     language = language.strip('.')
@@ -182,3 +210,89 @@ def line_parser2(data,i):
     language = language.strip()
     
     return language, speakers
+
+def third_question():
+    '''
+        Function to retrieve data for Third Question
+        Returns the number of people in the United States who speak each language
+        Returns in form of dictionary with the key as uppercase language (String) and the value as the number of speakers (float)
+        Ex. {"FRENCH",3000.0}
+    '''
+    #list of states
+    '''
+    states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District_of_Columbia',
+                'Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland',
+                'Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New_Hampshire',
+                'New_Jersey','New_Mexico','New_York','North_Carolina','North_Dakota','Ohio','Oklahoma','Oregon','Pennsylvania',
+                'Puerto_Rico','Rhode_Island','South_Carolina','South_Dakota','Tennessee','Texas','Utah','Vermont','Virginia',
+                'Washington','West_Virginia','Wisconsin','Wyoming']
+    '''
+    states = ['Alabama','Alaska', 'Arizona', 'Arkansas', 'California']
+    
+    bilingual_people = {}
+    speak_english_well = {}
+    percentages = {}
+    
+    for state in states:
+        #openDataFile
+        with open(state + '.csv','r') as datafile:
+            
+            data = datafile.readlines()
+            
+            state_name = state.replace('_',' ')
+            
+            bilingual, total = bilingual_people_by_state(data, False)
+            bilingual_people[state_name] = bilingual
+            speak_english_well[state_name] = total
+            
+    print speak_english_well
+    return bilingual_people
+        
+
+def bilingual_people_by_state(data, total):
+    '''
+    Function to return the number of bilingual people by state, and a second value that depends on total
+    Returns two floats
+    Float = number of bilingual people in the state
+    
+    If total = True, the second float = total population of state
+    If total = False, the second float = total people who speak English well
+    '''
+    #split data
+    lst = data[7].split(',')
+    
+    #keep track of number of bilingual people and second variable
+    speakers = 0
+    speakers2 = 0
+    
+    n = 0 #counter
+        
+    #get number of bilingual people   
+    while True:
+        if '.00' in lst[n]:
+            speakers = float(lst[n])
+            n=0
+            
+            if not total:
+                #number of people who speak english well
+                speakers2 = float(lst[n+2])
+            
+            break
+            
+        else:
+            n += 1
+        
+    if total:
+        #total number of people
+        lst = data[5].split(',')
+        while True:
+            if '.00' in lst[n]:
+                speakers2 = float(lst[n])
+                n=0
+            
+                break
+            
+            else:
+                n += 1
+    
+    return speakers, speakers2
