@@ -214,8 +214,8 @@ def line_parser2(data,i):
 def third_question():
     '''
         Function to retrieve data for Third Question
-        Returns the percentage of people in each state who speak another language
-        Returns in form of dictionary with the key as uppercase language (String) and the value as the percentage of bilingual people (float)
+        Returns the percentage of people in each state who speak another language who speak english well
+        Returns in form of dictionary with the key as uppercase language (String) and the value as the percentage of people who speak english well (float)
         Ex. {"FRENCH",50.0}
     '''
     #list of states
